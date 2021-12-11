@@ -8,19 +8,29 @@ public class Main {
 //        System.out.println("Give me a number!");
 //        int number = sc.nextInt();
 //        even_or_odd(number);
-        System.out.println("How big a square do you want?");
-        square(sc.nextInt());
+//        System.out.println("How big a square do you want?");
+//        square(sc.nextInt());
+        triangle(sc.nextInt());
     }
 
-    private static void square(int squareSize) {
-        for (int i = 0; i < squareSize; i++) {
-            for (int j = 0; j < squareSize; j++) {
+    private static void triangle(int triangleSize) {
+        for (int i = 1; i <= triangleSize; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("#");
+
             }
             System.out.println();
         }
-
     }
+
+//    private static void square(int squareSize) {
+//        for (int i = 0; i < squareSize; i++) {
+//            for (int j = 0; j < squareSize; j++) {
+//                System.out.print("#");
+//            }
+//            System.out.println();
+//        }
+//    }
 
 //    private static void even_or_odd(int number) {
 //        if (number % 2 == 0) {
